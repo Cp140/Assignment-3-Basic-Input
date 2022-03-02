@@ -10,20 +10,24 @@ namespace Assignment_3__Basic_Input
             string userName;
             int userAge;
             int currentYear;
+
             //Adder
             int intiger1;
             int intiger2;
             int intiger3;
             int intTotal;
+
             //Distance
             decimal dist1;
             decimal dist2;
             decimal dist3;
             decimal distAvg;
+
             //Hypotenuse
             double leg1;
             double leg2;
             double hypotrnuse;
+
             //Greeting "Users name, Age, Current Year = age and year born in"
             Console.WriteLine("What's Your Name:");
             userName = Console.ReadLine();
@@ -32,6 +36,7 @@ namespace Assignment_3__Basic_Input
             Console.WriteLine("What year is it");
             currentYear = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Hello {userName} you were born in {currentYear - userAge}");
+
             //Adder of 3 random numbers
             Console.WriteLine("In put 3 random numbers");
             intiger1 = Convert.ToInt32(Console.ReadLine());
@@ -39,6 +44,7 @@ namespace Assignment_3__Basic_Input
             intiger3 = Convert.ToInt32(Console.ReadLine());
             intTotal = intiger1 + intiger2 + intiger3;
             Console.WriteLine(intTotal);
+
             //Distance Takes 3 Distances and Averages them
             Console.WriteLine("In put 3 random distances");
             dist1 = Convert.ToDecimal(Console.ReadLine());
@@ -47,6 +53,7 @@ namespace Assignment_3__Basic_Input
             distAvg = (dist1 + dist2 + dist3) / 3;
             distAvg = Math.Round(distAvg, 2);
             Console.WriteLine(distAvg);
+
             //Hypotenuse Program reads two legs of right angle triangle, and gives length of hypotenuse.
             Console.WriteLine("Hypotenuse calculotor enter two diffrent legs of the triangle.");
             leg1 = Convert.ToDouble(Console.ReadLine());
